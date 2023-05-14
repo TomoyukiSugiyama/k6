@@ -1,0 +1,7 @@
+revision: latest
+name: k6
+namespace: k6
+deployment:
+  replicas: 1
+  image: grafana/k6
+imagePullPolicy: IfNotPresent
