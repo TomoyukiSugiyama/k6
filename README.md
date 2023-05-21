@@ -1,7 +1,12 @@
 # k6
 
+xk6-output-influxdb
+
 ```bash
-k6 run test.js
+K6_INFLUXDB_ORGANIZATION=<insert-here-org-name> \
+K6_INFLUXDB_BUCKET=<insert-here-bucket-name> \
+K6_INFLUXDB_TOKEN=<insert-here-valid-token> \
+~/go/bin/k6 run -o xk6-influxdb=http://localhost:8086 test.js 
 ```
 
 ```bash
